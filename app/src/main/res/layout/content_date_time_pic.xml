@@ -2,36 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:padding="10dip">
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textViewDate"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:text="请选择日期"
         android:textColor="@color/colorAccent"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <DatePicker
         android:id="@+id/date_picker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:datePickerMode="spinner"
-        android:layout_marginTop="5dip" />
-
-    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        android:singleLine="true"
-        android:text="请选择时间"
-        android:textColor="@color/colorAccent"
-        android:textSize="16sp" />
+        android:layout_marginTop="5dip"
+        android:spinnersShown="true" />
+    <!--下面的代码不需要解析-->
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dip"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="请选择时间"-->
+    <!--android:textColor="@color/colorAccent"-->
+    <!--android:textSize="16sp" />-->
 
-    <TimePicker
-        android:id="@+id/time_picker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dip" />
+    <!--<TimePicker-->
+    <!--android:id="@+id/time_picker"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dip" />-->
 </LinearLayout>
